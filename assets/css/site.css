@@ -1,0 +1,68 @@
+@font-face {
+  font-family: "PT Sans";
+  src: url(../fonts/PT-Sans.ttf) format("truetype");
+}
+@font-face {
+  font-family: "PT Sans Narrow";
+  src: url(../fonts/PT-Sans-Narrow.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Decomart";
+  src: url(../fonts/Decomart-FF-4F.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Myriad Pro";
+  src: url(../fonts/MyriadPro-Regular.otf) format("truetype");
+}
+@font-face {
+  font-family: "Myriad Pro Bold";
+  src: url(../fonts/MyriadPro-BoldCondIt.otf) format("truetype");
+}
+html,body { height: 100%; margin: 0px; padding: 0px; }
+body{
+  background-color:white;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+h1, h2, h3, h4 {
+  font-family: "Myriad Pro";
+}
+.transition{
+	transition: all 0.5s ease;
+	transition-delay: 0.1s;
+}
+::-webkit-input-placeholder {color:#FFFFFF !important; font-family: "PT Sans Narrow"; font-size:25pt;}
+::-moz-placeholder          {color:#FFFFFF !important; font-family: "PT Sans Narrow"; font-size:25pt;}/* Firefox 19+ */
+:-moz-placeholder           {color:#FFFFFF !important; font-family: "PT Sans Narrow"; font-size:25pt;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#FFFFFF !important; font-family: "PT Sans Narrow"; font-size:25pt;}
+
+
+.slick-prev:before, .slick-next:before{
+  color:black;
+}
+.controlls > div {
+  margin-bottom: 10px;
+}
+.controlls > div > button, .controlls > div > select{
+  display: block;
+  width: 100%;
+}
+
+/* xs */
+@media(max-width:767px){
+
+}
+/* sm */
+@media(min-width:768px){
+
+}
+/* md */
+@media(min-width:992px){
+    
+}
+/* lg */
+@media(min-width:1200px){
+    
+}
