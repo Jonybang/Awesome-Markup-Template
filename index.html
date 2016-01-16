@@ -41,7 +41,8 @@
         }
         return scale;
     }
-    document.write('<meta name="viewport" content="width=device-width, initial-scale='+getInitialScale()+'"/>');    
+    //document.write('<meta name="viewport" content="width=device-width, initial-scale='+getInitialScale()+'"/>');
+		document.write('<meta name="viewport" content="width=device-width, initial-scale=1"/>');        
     </script>
 </head>
 <body>
@@ -87,6 +88,22 @@
 						</div>
 					</div>
 					<div class="form-group col-md-12">
+						<div class="col-xs-12">
+							<label for="message">Изображение</label>
+						</div>
+						<div class="col-xs-12">
+							 <style>
+									.thumb {
+										height: 200px;
+										border: 1px solid #000;
+										margin: 10px 5px 0 0;
+									}
+                </style>
+                <input type="file" id="photo" name="photo"/>
+                <div id="photo_output"></div>
+						</div>
+					</div>
+					<div class="form-group col-md-12">
 						<div class="col-md-6 col-lg-7 col-md-offset-4 col-lg-offset-3">
 							<button type="submit" class="btn btn-primary">Send and noty</button>
 						</div>
@@ -96,26 +113,6 @@
 		</div>
 	</div>
 	<div class="col-md-4">
-		<div class="col-md-12">
-			<h2>Awesome Slider and Lightbox</h2>
-			<div id="my-slider">
-				<div>
-					<a href="assets/img/kosmos1.jpg" data-lightbox="my-slider">
-						<img src="assets/img/kosmos1.jpg" class="img-responsive">
-					</a>
-				</div>
-				<div>
-					<a href="assets/img/kosmos2.jpg" data-lightbox="my-slider">
-						<img src="assets/img/kosmos2.jpg" class="img-responsive">
-					</a>
-				</div>
-				<div>
-					<a href="assets/img/kosmos3.jpeg" data-lightbox="my-slider">
-						<img src="assets/img/kosmos3.jpeg" class="img-responsive">
-					</a>
-				</div>
-			</div>
-		</div>
 		<div class="col-md-12 well well-sm">
 			<div class="col-md-5">
 				<h2>Awesome Yandex Map</h2>
@@ -143,6 +140,26 @@
 						myMap.geoObjects.add(myPlacemark);
 					}
 				</script>
+			</div>
+		</div>
+		<div class="col-md-12">
+			<h2>Awesome Slider and Lightbox</h2>
+			<div id="my-slider">
+				<div>
+					<a href="assets/img/kosmos1.jpg" data-lightbox="my-slider">
+						<img src="assets/img/kosmos1.jpg" class="img-responsive">
+					</a>
+				</div>
+				<div>
+					<a href="assets/img/kosmos2.jpg" data-lightbox="my-slider">
+						<img src="assets/img/kosmos2.jpg" class="img-responsive">
+					</a>
+				</div>
+				<div>
+					<a href="assets/img/kosmos3.jpeg" data-lightbox="my-slider">
+						<img src="assets/img/kosmos3.jpeg" class="img-responsive">
+					</a>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -224,7 +241,9 @@
 	<script type="text/javascript" src="assets/js/vendor/slick.min.js"></script>
 	<script type="text/javascript" src="assets/js/vendor/select2.min.js"></script>
 	<script type="text/javascript" src="assets/js/vendor/lightbox.min.js"></script>
+
 	<script type="text/javascript" src="assets/js/site.js"></script>
+	<script type="text/javascript" src="assets/js/image-upload.js"></script>
 	<!--fancy-box-->
 </body>
 </html>

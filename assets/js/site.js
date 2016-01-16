@@ -50,13 +50,18 @@ $(function(){
 	})
 
 	$('.share-social a').click(function(event){
-        if($(this).hasClass('lj'))
-            return;
-        event.preventDefault();
         var url = window.location.href;
         var title = document.title;
-        var description = $('meta[name=description]').attr("content");
-        var image = $('img.share').attr('src');
+        var description = $('meta[name="description"]').attr("content");
+        var image = $('img.share').attr('src') || $('meta[name="og:image"]').attr("content");
+        
+        if($(this).hasClass('lj')){
+            $(this).attr('href', 'http://www.livejournal.com/update.bml?event='+url+'&subject='+title);
+            $(this).attr('target', '_blank');
+            return;
+        }
+        
+        event.preventDefault();
         
         var shareLink;
         
