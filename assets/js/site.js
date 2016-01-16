@@ -1,4 +1,9 @@
 $(function(){
+	//HTML5 form validate for all browsers
+	webshim.activeLang('ru');
+  webshims.polyfill('forms');
+  webshims.cfg.no$Switch = true;
+
 	$('#my-slider').slick({
 		adaptiveHeight: true,
 		//variableWidth: true,
